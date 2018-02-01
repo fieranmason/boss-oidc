@@ -27,7 +27,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='boss-oidc',
-    version='0.1',
+    version='0.1.1',
     packages=['bossoidc'],
     url='https://github.com/fieranmason/boss-oidc',
     license="Apache Software License",
