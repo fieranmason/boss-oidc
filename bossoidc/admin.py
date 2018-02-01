@@ -29,4 +29,5 @@ class KeycloakInline(admin.StackedInline):
 class UserAdmin(BaseUserAdmin):
     inlines = (KeycloakInline, )
 
+admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
