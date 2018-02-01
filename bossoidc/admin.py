@@ -13,6 +13,7 @@
 # limitations under the License.
 
 from django.contrib import admin
+from gwells.models.User import User
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 from bossoidc.models import Keycloak
@@ -28,4 +29,4 @@ class KeycloakInline(admin.StackedInline):
 class UserAdmin(BaseUserAdmin):
     inlines = (KeycloakInline, )
 
-admin.site.register(UserAdmin)
+admin.site.register(User, UserAdmin)
